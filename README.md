@@ -1,6 +1,7 @@
 # react-native-qrcode-scanner update matching react-native up to `0.70.xx` above
 
 I forked from moaazsidat/react-native-qrcode-scanner then I modified this package to match with `react-native@0.70.xx` above
+My custom dependency: `react-native-camera-custom-mode`
 
 This library was originally written as a plug and play QRCode scanner for React Native without a ton of setup. Since then, the ecosystem has evolved quite a bit, resulting in newer libraries requiring less setup and reducing the need for this project to exist. As such this library has been archived. 
 
@@ -63,8 +64,8 @@ android {
 
 [react-native-camera](https://github.com/lwansbrough/react-native-camera) is a dependency for this package that you'll need to add to your project. To install, run the following commands:
 
-1. `npm install react-native-camera --save`
-2. `react-native link react-native-camera`
+1. `npm install react-native-camera-custom-mode --save`
+2. `react-native link react-native-camera-custom-mode`
 
 #### New Version/Migration
 
