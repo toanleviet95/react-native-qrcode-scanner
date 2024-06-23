@@ -1,4 +1,4 @@
-# react-native-qrcode-scanner
+# react-native-qrcode-scanner update matching react-native up to 0.7x.yy
 
 This library was originally written as a plug and play QRCode scanner for React Native without a ton of setup. Since then, the ecosystem has evolved quite a bit, resulting in newer libraries requiring less setup and reducing the need for this project to exist. As such this library has been archived. 
 
