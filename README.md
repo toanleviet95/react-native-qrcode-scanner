@@ -11,7 +11,7 @@ The recommendation of most developers that were previously using this library is
 
 [![npm version](https://badge.fury.io/js/react-native-qrcode-scanner.svg)](https://badge.fury.io/js/react-native-qrcode-scanner) [![Backers on Open Collective](https://opencollective.com/react-native-qrcode-scanner/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/react-native-qrcode-scanner/sponsors/badge.svg)](#sponsors)
 
-A QR code scanner component for React Native built on top of [react-native-camera by Lochlan Wansbrough](https://github.com/lwansbrough/react-native-camera)
+A QR code scanner component for React Native built on top of [react-native-camera-custom-mode forked by me](https://github.com/lwansbrough/react-native-camera)
 
 Please note, this will also function as a generic barcode scanner by the virtue of the above module supporting barcode scanning, however, this module was initially built as a QR code scanner.
 
@@ -49,29 +49,25 @@ With Android 7 and higher you need to add the "Vibration" permission to your And
 ```
 <uses-permission android:name="android.permission.VIBRATE"/>
 ```
-You need to add the "missingDimensionStrategy" config for the 'react-native-camera' setting  to 'general', this should be found in your `android/app/build.gradle` add the following:
+You need to add the "missingDimensionStrategy" config for the 'react-native-camera-custom-mode' setting  to 'general', this should be found in your `android/app/build.gradle` add the following:
 ```
 android {
   ...
   defaultConfig {
     ...
-    missingDimensionStrategy 'react-native-camera', 'general' <-- insert this line
+    missingDimensionStrategy 'react-native-camera-custom-mode', 'general' <-- insert this line
   }
 }
 ```
 
-#### react-native-camera
+#### react-native-camera-custom-mode
 
-[react-native-camera](https://github.com/lwansbrough/react-native-camera) is a dependency for this package that you'll need to add to your project. To install, run the following commands:
+[react-native-camera-custom-mode](https://www.npmjs.com/package/react-native-camera-custom-mode) is a dependency for this package that you'll need to add to your project. To install, run the following commands:
 
 1. `npm install react-native-camera-custom-mode --save`
 2. `react-native link react-native-camera-custom-mode`
 
-#### New Version/Migration
-
-If using an older version of this module with RCTCamera you will need to follow the docs [here](https://github.com/react-native-community/react-native-camera/blob/master/docs/migration.md) to move from the old RCTCamera to the new RNCamera. You will then need to install it as above.
-
-**Versions of this library > 0.0.30 will not support react-native-camera versions less than 1.0.0.**
+**Versions of this library > 0.0.30 will not support react-native-camera-custom-mode versions less than 1.0.0.**
 
 ### To install and start using react-native-qrcode-scanner:
 
@@ -114,7 +110,7 @@ import {
 } from 'react-native';
 
 import QRCodeScanner from 'react-native-qrcode-scanner';
-import { RNCamera } from 'react-native-camera';
+import { RNCamera } from 'react-native-camera-custom-mode';
 
 class ScanScreen extends Component {
   onSuccess = e => {

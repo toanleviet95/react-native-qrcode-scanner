@@ -1,5 +1,5 @@
 {
-  "name": "react-native-qrcode-scanner",
+  "name": "react-native-qrcode-scanner-custom-mode",
   "version": "1.5.5",
   "description": "A QR code scanner for React Native.",
   "main": "index.js",
@@ -20,7 +20,7 @@
     "scanner",
     "barcode"
   ],
-  "author": "Moaaz Sidat",
+  "author": "tonlee95",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/moaazsidat/react-native-qrcode-scanner/issues"
@@ -39,7 +39,7 @@
     "prettier": "^1.12.1"
   },
   "peerDependencies": {
-    "react-native-camera": ">=1.0.2"
+    "react-native-camera-custom-mode": ">=1.0.2"
   },
   "homepage": "https://github.com/moaazsidat/react-native-qrcode-scanner#readme",
   "release": {

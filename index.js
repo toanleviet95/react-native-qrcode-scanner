@@ -17,7 +17,7 @@ import {
 } from 'react-native';
 
 import { request, PERMISSIONS, RESULTS } from 'react-native-permissions';
-import { RNCamera as Camera } from 'react-native-camera';
+import { RNCamera as Camera } from 'react-native-camera-custom-mode';
 
 const CAMERA_FLASH_MODE = Camera.Constants.FlashMode;
 const CAMERA_FLASH_MODES = [
@@ -350,7 +350,9 @@ export default class QRCodeScanner extends Component {
         <View style={[styles.infoView, this.props.topViewStyle]}>
           {this._renderTopContent()}
         </View>
-        <View style={this.props.cameraContainerStyle}>{this._renderCamera()}</View>
+        <View style={this.props.cameraContainerStyle}>
+          {this._renderCamera()}
+        </View>
         <View style={[styles.infoView, this.props.bottomViewStyle]}>
           {this._renderBottomContent()}
         </View>

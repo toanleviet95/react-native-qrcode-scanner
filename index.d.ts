@@ -5,7 +5,7 @@
  */
 import { Component } from 'react';
 import { ViewStyle, StyleProp } from 'react-native';
-import { RNCameraProps, BarCodeReadEvent, Constants } from 'react-native-camera';
+import { RNCameraProps, BarCodeReadEvent, Constants } from 'react-native-camera-custom-mode';
 
 export interface RNQRCodeScannerProps {
   onRead(e: BarCodeReadEvent): void;
